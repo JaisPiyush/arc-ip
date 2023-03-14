@@ -1,9 +1,9 @@
 import axios from "axios";
 import { signal, effect, Signal } from "@preact/signals-core";
 
-import {} from "./utils.ts";
 import "./types.ts";
 import { SubscribeFunction, Tipset } from "./types.ts";
+import { logger } from "../logger.ts";
 
 export class FilecoinTipSetIndexer {
   readonly rpcEndpoint: string;
@@ -27,7 +27,7 @@ export class FilecoinTipSetIndexer {
       });
     });
     this.rpcEndpoint = opts.rpcEndpoint;
-    this.pollInterval = opts.pollInterval || 3000;
+    this.pollInterval = opts.pollInterval || 15000;
   }
 
   public async makeRpcRequest<T>(
@@ -48,6 +48,12 @@ export class FilecoinTipSetIndexer {
           Accept: "*/*",
         },
       }
+    );
+
+    logger.info(
+      "FilecoinTipSetIndexer:makeRpcRequest",
+      "Method: ",
+      `Filecoin.${method}`
     );
 
     return data.result;
@@ -72,6 +78,7 @@ export class FilecoinTipSetIndexer {
   private async poll(): Promise<void> {
     const { Height } = await this.getChainHead();
     this.store.value = Height;
+    logger.info("FilecoinTipSetIndexer:poll", "Height:", Height);
     this.poller = setTimeout(async () => {
       await this.poll();
     }, this.pollInterval);
