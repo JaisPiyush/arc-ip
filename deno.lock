@@ -220,7 +220,11 @@
     "https://deno.land/x/logger@v1.0.2/writer.ts": "7e0f7e204d96418e7d1285299c6d604f5479928f4b6f5b25daa32ac5fba31175",
     "https://esm.sh/@openzeppelin/merkle-tree@1.0.2": "90f4afe08edb4f17b1e9a78e96df17a37a57a4a4435b2d09c11b0549c074f216",
     "https://esm.sh/@preact/signals-core@1.2.3": "ebad5ff7ed70ee8e0460b83d2bf1005cefdccb6c8b2bea08004dba46f6f89bf9",
+    "https://esm.sh/@zondax/filecoin-signing-tools@2.4.1": "bf84c486295bc07bb5ca26a5dd40b51a37a91492875b3c301be2e14098612968",
     "https://esm.sh/axios@1.3.4": "618e17bf54b6023430e62dbfa2db8b085440e06be7d11fd2adc81a97e5d9113c",
+    "https://esm.sh/base32-decode@1.0.0": "171d2206fb79c0fe4975917091e085f05360dc2faaba0cebfc4eb1c50f32e171",
+    "https://esm.sh/base32-encode@2.0.0": "a20ded7f710ee75ad5d29967f9f7b1dd99bb6cc45fcdcc426a0724522c1791fd",
+    "https://esm.sh/leb128@0.0.5": "cc1bcc1f2d9ee538a58ce5ee3ca715e96d00136f1ee9b9792d94fe4af8f9fd30",
     "https://esm.sh/obs-store@4.0.3": "3c79292bddeef1f80da104e32ec46bea34b573a3cbd25b842f66a1b97c74ccc1",
     "https://esm.sh/v111/@ethersproject/abi@5.7.0/deno/abi.js": "1087054712dd63ea6d6a5e6a1fc0dab5792799af7698c193b31f2a3fe3ba651e",
     "https://esm.sh/v111/@ethersproject/address@5.7.0/deno/address.js": "05e13d1daafd6cfd6e7c8eca8f4d97ae11e3c1b5749025f3a5d1f1714b4182d0",
@@ -245,24 +249,46 @@
     "https://esm.sh/v111/@openzeppelin/merkle-tree@1.0.2/dist/standard.d.ts": "7b8165bab4d37a5424dec77b2d1ef741d528528df91cb43001fb7a0ae57869e4",
     "https://esm.sh/v111/@preact/signals-core@1.2.3/deno/signals-core.js": "1e3986f3862f313d9f19d63b82ae2c6376f5ad9f18b6f3c49b21fb05e3c513a3",
     "https://esm.sh/v111/@preact/signals-core@1.2.3/dist/signals-core.d.ts": "e39c59670049b772b2c7748907af01f4fb5d5706b88fa8266d9135925ca5baf7",
+    "https://esm.sh/v111/@zondax/filecoin-signing-tools@2.4.1/deno/filecoin-signing-tools.js": "13a1088e0dc7245e4d14320745cd556fed7c6d0deb2cd32e14ac51d337705ae3",
     "https://esm.sh/v111/axios@1.3.4/deno/axios.js": "0874d36920fde27bcbcf6ff55f78505aa641ee995453eb2db47ee53ff2baed17",
     "https://esm.sh/v111/axios@1.3.4/index.d.ts": "17affcd8cc646e7f05e4b96d325b893d22542dd2c2c63ead572ca1bea346ebc9",
+    "https://esm.sh/v111/base32-decode@1.0.0/deno/base32-decode.js": "584c3cc286b851e2ec44397189d4d80455979dd1ac3f4cf3a15fb3dc3906232f",
+    "https://esm.sh/v111/base32-decode@1.0.0/index.d.ts": "9b49ad05dee48aa618fbb0dcd3295ba97e228bb274b3ea335e2490d8705cdb07",
+    "https://esm.sh/v111/base32-encode@2.0.0/deno/base32-encode.js": "898e815e42cbc97250141f35d48291816dba6734057ed324d5d6e118af0a78b6",
+    "https://esm.sh/v111/base32-encode@2.0.0/index.d.ts": "44cd2d67de4dd4df34dd7df7547d8b2c722144ad3bd3456740638b25e8c63606",
     "https://esm.sh/v111/bn.js@5.2.1/deno/bn.js": "1d49706a1b8f39fbc8429d64f31346a44b0ff3affd2c498f53cd7f393ad35fb6",
+    "https://esm.sh/v111/buffer-pipe@0.0.3/deno/buffer-pipe.js": "d2498d517af487050e142d691f0b3decb4c66041d320bc1630c6d0e3733a3c56",
     "https://esm.sh/v111/ethereum-cryptography@1.2.0/deno/keccak.js": "51af22365fd9b34c9db53f5f7ff738315cafdc6680ee9569487a1c37d0d71b9f",
     "https://esm.sh/v111/ethereum-cryptography@1.2.0/deno/utils.js": "456a9069e28b6dadef31b5eb8f2d7ca35fb534ba52de2c2122ccde9a72d1d77a",
     "https://esm.sh/v111/js-sha3@0.8.0/deno/js-sha3.js": "9995b9478786bc042b60136790554ad381bc97d47d2fdabefd512f1cfd5c2160",
+    "https://esm.sh/v111/leb128@0.0.5/deno/leb128.js": "7a9fa9f92afa97815932e7a867bea653c2fe5fd27689e1373054cd3e8c0b4aca",
     "https://esm.sh/v111/node_buffer.js": "445d389cb8c9f9fad5ff869ca2c2a863d178d410795ebd5f2f39d9a029156d56",
     "https://esm.sh/v111/obs-store@4.0.3/deno/obs-store.js": "9874995e764f27db2749f0ed2b3d61334707c030b2725a941952e607d695b3b3",
+    "https://esm.sh/v111/safe-buffer@5.2.1/deno/safe-buffer.js": "ac0830ad14c94d872829c5837c97e76380cead713f0813a2c39dd140c6acdfca",
     "https://esm.sh/v111/safe-event-emitter@1.0.1/deno/safe-event-emitter.js": "00a22ecdd1b86302196c6bd3a3e9d54b044985a12e502347dc548be6e46e090d",
+    "https://esm.sh/v111/to-data-view@2.0.0/deno/to-data-view.js": "5a179f673d74e6a33dd7f35a7a8e1761430c217da0451558dd7dc462b21d6c1d",
     "https://esm.sh/v111/xtend@4.0.2/deno/xtend.js": "13bab7ba9f38a1968a1164b4e92c9c39fb189758b93e2f59a248c78c99ce0fba"
   },
   "npm": {
     "specifiers": {
       "@preact/signals-core@1.2.3": "@preact/signals-core@1.2.3",
       "axios@1.3.4": "axios@1.3.4",
+      "ethers@6.1.0": "ethers@6.1.0",
       "merkletreejs@0.3.9": "merkletreejs@0.3.9"
     },
     "packages": {
+      "@adraffy/ens-normalize@1.8.9": {
+        "integrity": "sha512-93OmGCV0vO8+JQ3FHG+gZk/MPHzzMPDRiCiFcCQNTCnHaaxsacO3ScTPGlu2wX2dOtgfalbchPcw1cOYYjHCYQ==",
+        "dependencies": {}
+      },
+      "@noble/hashes@1.1.2": {
+        "integrity": "sha512-KYRCASVTv6aeUi1tsF8/vpyR7zpfs3FUzy2Jqm+MU+LmUKhQ0y2FpfwqkCcxSg2ua4GALJd8k2R76WxwZGbQpA==",
+        "dependencies": {}
+      },
+      "@noble/secp256k1@1.7.1": {
+        "integrity": "sha512-hOUk6AyBFmqVrv7k5WAw/LpszxVbj9gGN4JRkIX52fdFAj1UA61KXmZDvqVEm+pOyec3+fIeZB02LYa/pWOArw==",
+        "dependencies": {}
+      },
       "@preact/signals-core@1.2.3": {
         "integrity": "sha512-Kui4p7PMcEQevBgsTO0JBo3gyQ88Q3qzEvsVCuSp11t0JcN4DmGCTJcGRVSCq7Bn7lGxJBO+57jNSzDoDJ+QmA==",
         "dependencies": {}
@@ -288,6 +314,10 @@
         "dependencies": {
           "@types/node": "@types/node@18.15.3"
         }
+      },
+      "aes-js@4.0.0-beta.3": {
+        "integrity": "sha512-/xJX0/VTPcbc5xQE2VUP91y1xN8q/rDfhEzLm+vLc3hYvb5+qHCnpJRuFcrKn63zumK/sCwYYzhG8HP78JYSTA==",
+        "dependencies": {}
       },
       "asynckit@0.4.0": {
         "integrity": "sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==",
@@ -452,6 +482,17 @@
           "create-hash": "create-hash@1.2.0",
           "ethereum-cryptography": "ethereum-cryptography@0.1.3",
           "rlp": "rlp@2.2.7"
+        }
+      },
+      "ethers@6.1.0": {
+        "integrity": "sha512-aC45YGbvgXt7Nses5WsdQwc1cUIrrQt32zeFShNW7ZT3RQCIHBnd4nmbE5sJmrp70uTdwkRHkr4cZr1D/YwFPg==",
+        "dependencies": {
+          "@adraffy/ens-normalize": "@adraffy/ens-normalize@1.8.9",
+          "@noble/hashes": "@noble/hashes@1.1.2",
+          "@noble/secp256k1": "@noble/secp256k1@1.7.1",
+          "aes-js": "aes-js@4.0.0-beta.3",
+          "tslib": "tslib@2.4.0",
+          "ws": "ws@8.5.0"
         }
       },
       "ethjs-unit@0.1.6": {
@@ -658,6 +699,10 @@
         "integrity": "sha512-1m4RA7xVAJrSGrrXGs0L3YTwyvBs2S8PbRHaLZAkFw7JR8oIFwYtysxlBZhYIa7xSyiYJKZ3iGrrk55cGA3i9A==",
         "dependencies": {}
       },
+      "tslib@2.4.0": {
+        "integrity": "sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==",
+        "dependencies": {}
+      },
       "utf8@3.0.0": {
         "integrity": "sha512-E8VjFIQ/TyQgp+TZfS6l8yp/xWppSAHzidGiRrqe4bK4XP9pTRyKFgGJpO3SN7zdX4DeomTrwaseCHovfpFcqQ==",
         "dependencies": {}
@@ -677,6 +722,10 @@
           "randombytes": "randombytes@2.1.0",
           "utf8": "utf8@3.0.0"
         }
+      },
+      "ws@8.5.0": {
+        "integrity": "sha512-BWX0SWVgLPzYwF8lTzEy1egjhS4S4OEAHfsO8o65WOVsrnSRGaSiUaa9e0ggGlkMTtBlmOpEXiie9RUcBO86qg==",
+        "dependencies": {}
       }
     }
   }
