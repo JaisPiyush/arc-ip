@@ -1,0 +1,106 @@
+[
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "oracle",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"internalType": "uint256",
+				"name": "height",
+				"type": "uint256"
+			},
+			{
+				"indexed": true,
+				"internalType": "uint256",
+				"name": "currentHeight",
+				"type": "uint256"
+			}
+		],
+		"name": "SentinelDataFeeded",
+		"type": "event"
+	},
+	{
+		"inputs": [],
+		"name": "currentSentinelDataFeedBlock",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "sentinelData",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "height",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "initialPledgeRateFor32GiB",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "rawBytesPowerOfProtocol",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "availableBalanceOfProtocol",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "pledgedCollateralOfProtocol",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "height",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "initialPledgeRateFor32GiB",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "rawBytesPowerOfProtocol",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "availableBalanceOfProtocol",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "pledgedCollateralOfProtocol",
+				"type": "uint256"
+			}
+		],
+		"name": "submit_SentinelData",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	}
+]

@@ -1,5 +1,6 @@
 {
   "tasks": {
-    "dev": "deno run --watch main.ts"
+    "dev": "deno run --watch main.ts",
+    "gen": "typechain --target=ethers-v5 ./abi/*.json --out-dir=./abi/gen"
   }
 }
