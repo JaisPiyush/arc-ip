@@ -23,7 +23,7 @@ export interface FilFoxMinerBalance {
 export interface FilFoxMinerPower {
   height: number;
   timestamp: number;
-  rawBytesPower: string;
+  rawBytePower: string;
   qualityAdjPower: string;
   rawBytePowerDelta: string;
   qualityAdjPowerDelta: string;
@@ -37,7 +37,7 @@ export enum FilecoinNets {
 export interface FilecoinSentinelData {
   height: number;
   initialPledgeRateFor32GiB: bigint;
-  rawBytesPowerOfProtocol: bigint;
+  rawBytePowerOfProtocol: bigint;
   availableBalanceOfProtocol: bigint;
   pledgeCollateralOfProtocol: bigint;
 }

@@ -1,4 +1,4 @@
-import axios from "https://esm.sh/axios@1.3.4";
+import axiod from "https://deno.land/x/axiod/mod.ts";
 import { logger } from "../logger.ts";
 import {
   FilecoinNets,
@@ -26,7 +26,7 @@ export class FilecoinDataAggregator {
   public async getOverview(
     net = FilecoinNets.Mainnet
   ): Promise<FilFoxOverviewReturnData> {
-    const { data } = await axios.get<FilFoxOverviewReturnData>(
+    const { data } = await axiod.get<FilFoxOverviewReturnData>(
       this.getNetworkEndpoint(net) + "/overview"
     );
     return data;
@@ -37,7 +37,7 @@ export class FilecoinDataAggregator {
     duration = "24h",
     net = FilecoinNets.Mainnet
   ): Promise<FilFoxMinerBalance[]> {
-    const { data } = await axios.get<FilFoxMinerBalance[]>(
+    const { data } = await axiod.get<FilFoxMinerBalance[]>(
       this.getNetworkEndpoint(net) +
         `/address/${miner}/balance-stats?duration=${duration}`
     );
@@ -49,7 +49,7 @@ export class FilecoinDataAggregator {
     duration = "24h",
     net = FilecoinNets.Mainnet
   ): Promise<FilFoxMinerPower[]> {
-    const { data } = await axios.get<FilFoxMinerPower[]>(
+    const { data } = await axiod.get<FilFoxMinerPower[]>(
       this.getNetworkEndpoint(net) +
         `/address/${miner}/power-stats?duration=${duration}`
     );
@@ -83,7 +83,7 @@ export class FilecoinDataAggregator {
       return {
         height: 0,
         timestamp: 0,
-        rawBytesPower: "0",
+        rawBytePower: "0",
         qualityAdjPower: "0",
         rawBytePowerDelta: "0",
         qualityAdjPowerDelta: "0",
@@ -103,7 +103,7 @@ export class FilecoinDataAggregator {
   }
 
   private async getOverviewDataFromFilScout(): Promise<FilFoxOverviewData> {
-    const { data } = await axios.get<{
+    const { data } = await axiod.get<{
       data: Record<string, unknown> & FilScoutOverviewData;
     }>("https://api2.filscout.com/api/v2/network/overview");
 
@@ -134,15 +134,15 @@ export class FilecoinDataAggregator {
       height,
       initialPledgeRateFor32GiB:
         await this.getInitialPledgeCollateralRateFor32GiB(net),
-      rawBytesPowerOfProtocol: BigInt("0"),
+      rawBytePowerOfProtocol: BigInt("0"),
       availableBalanceOfProtocol: BigInt("0"),
       pledgeCollateralOfProtocol: BigInt("0"),
     };
 
     for (const miner of miners) {
-      const latestBalance = await this.getLatestMinerBalanceStats(miner);
-      const latestPower = await this.getLatestMinerPowerStats(miner);
-      sentinelData.rawBytesPowerOfProtocol += BigInt(latestPower.rawBytesPower);
+      const latestBalance = await this.getLatestMinerBalanceStats(miner, net);
+      const latestPower = await this.getLatestMinerPowerStats(miner, net);
+      sentinelData.rawBytePowerOfProtocol += BigInt(latestPower.rawBytePower);
       sentinelData.availableBalanceOfProtocol += BigInt(
         latestBalance.availableBalance
       );
