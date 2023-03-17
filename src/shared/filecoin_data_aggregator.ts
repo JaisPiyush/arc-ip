@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios from "https://esm.sh/axios@1.3.4";
 import { logger } from "../logger.ts";
 import {
   FilecoinNets,

@@ -1,7 +1,9 @@
-import axios from "axios";
-import { signal, effect, Signal } from "@preact/signals-core";
-
-import "./types.ts";
+import axios from "https://esm.sh/axios@1.3.4";
+import {
+  signal,
+  effect,
+  Signal,
+} from "https://esm.sh/@preact/signals-core@1.2.3";
 import { SubscribeFunction, Tipset } from "./types.ts";
 import { logger } from "../logger.ts";
 
